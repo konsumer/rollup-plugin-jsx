@@ -1,0 +1,24 @@
+{
+  "name": "rollup-plugin-jsx",
+  "version": "1.0.0",
+  "description": "Rollup jsx plugin",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/konsumer/rollup-plugin-jsx.git"
+  },
+  "keywords": [
+    "rollup-plugin",
+    "jsx",
+    "react"
+  ],
+  "author": "David Konsumer <konsumer@jetboystudio.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/konsumer/rollup-plugin-jsx/issues"
+  },
+  "homepage": "https://github.com/konsumer/rollup-plugin-jsx#readme",
+  "dependencies": {
+    "jsx-transform": "^2.3.0"
+  }
+}
