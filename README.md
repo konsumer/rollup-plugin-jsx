@@ -1,6 +1,6 @@
 # rollup jsx plugin
 
-This is a simple wrapper around [jsx-transform](https://github.com/alexmingoia/jsx-transform).
+This is a simple wrapper around [jsx-transform](https://github.com/alexmingoia/jsx-transform). Make sure to go check that out for options.
 
 Install it with `npm install rollup-plugin-jsx`
 
@@ -8,14 +8,12 @@ Use it like this in your config:
 
 ```js
 import jsx from 'rollup-plugin-jsx'
-import buble from 'rollup-plugin-buble'
 
 export default {
   dest: 'build/app.js',
   entry: 'src/index.js',
   plugins: [
-    jsx(),
-    buble()
+    jsx( {factory: 'h'} )
   ],
   sourceMap: true
 }
