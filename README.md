@@ -13,7 +13,7 @@ export default {
   dest: 'build/app.js',
   entry: 'src/index.js',
   plugins: [
-    jsx( {factory: 'h'} )
+    jsx( {factory: 'React.createElement'} )
   ],
   sourceMap: true
 }
