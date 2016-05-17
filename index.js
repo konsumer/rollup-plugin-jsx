@@ -8,20 +8,15 @@ module.exports = function(options){
   return {
     transform: function sourceToCode(code, id){
       if ( !filter( id ) ) return null
-      
+
       var s = new MagicString( code )
       var out = jsx.fromString(code, options)
       s.overwrite( 0, code.length, out.toString() )
 
-      var result = {
-        code: s.toString()
+      return  {
+        code: s.toString(),
+        map: s.generateMap({ hires: true })
       }
-
-      if (options.sourceMap){
-        result.map = s.generateMap({ hires: true })
-      }
-
-      return result
     }
   }
 }
